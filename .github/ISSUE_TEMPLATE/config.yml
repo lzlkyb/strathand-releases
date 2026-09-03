@@ -1,0 +1,8 @@
+# blank_issues_enabled 必须为 true：应用内「报错一键反馈」走
+# issues/new?title=&body= 参数预填的空白 Issue（Issue Forms 会忽略 body 参数），
+# 关掉空白 Issue 会把报错路径挡在「请选择模板」页。
+blank_issues_enabled: true
+contact_links:
+  - name: 疑问 / 使用交流
+    url: https://gitee.com/lzul/strathand-releases/issues/new
+    about: 不确定是不是 Bug 的使用问题，也可先在 Gitee 提问。
