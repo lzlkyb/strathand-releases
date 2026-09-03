@@ -1,0 +1,61 @@
+name: 🐛 Bug 反馈（策手问题报告）
+description: 功能不工作、数据不对、崩溃等问题。提交前请先搜索是否已有相同问题。
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        感谢反馈！**应用内「这是什么？→ 反馈」按钮会自动复制环境信息**，粘贴到下面第一个输入框即可，能大幅加快定位。
+        提交前请先[搜索已有 Issue](../../../../issues?q=) 避免重复。
+  - type: textarea
+    id: env
+    attributes:
+      label: 环境信息
+      description: 粘贴应用内自动复制的环境信息（含应用版本、系统环境）；手动填写的话至少写明应用版本号。
+      placeholder: |
+        应用版本：0.3.0
+        系统环境：Windows 11 …
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: 问题描述
+      description: 发生了什么？是崩溃、数据不对，还是界面显示异常？
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: 复现步骤
+      description: 从打开应用开始，一步步写清怎么操作能再次遇到这个问题。
+      placeholder: |
+        1. 打开「研究」页
+        2. 点击…
+        3. 出现…
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: 期望结果与实际结果
+      description: 你期望发生什么，实际发生了什么。
+    validations:
+      required: false
+  - type: textarea
+    id: extra
+    attributes:
+      label: 截图 / 日志（选填）
+      description: 截图可直接拖进来；日志可粘贴相关片段。
+    validations:
+      required: false
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: 提交前确认
+      options:
+        - label: 我已搜索过，确认没有重复的 Issue
+          required: true
+        - label: 我愿意在开发者需要补充信息时继续回复
+          required: false
